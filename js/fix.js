@@ -1,7 +1,12 @@
+console.log("Up and running!");
+
 var cardOne = "queen";
 var cardTwo = "queen";
 var cardThree = "king";
 var cardFour = "king";
+
+console.log("User flipped " + cardOne);
+console.log("User flipped " + cardthree);
 
 var cards = [
 {
@@ -28,13 +33,13 @@ cardImage :	"images/king-of-diamonds.png"
 
 var cardsInPlay = [];
 
-var checkForMatch = function(){
+var checkForMatch = (){
 	if(cardsInPlay[0] === cardsInPlay[1]){
-	alert("You found a match!");
+	alert: alert("You found a match!");
 	} else{
 	alert("Sorry try again.");
 	}	
-};
+}
 
 var flipCard = function(cardId){
 
@@ -42,11 +47,13 @@ var flipCard = function(cardId){
 	checkForMatch();
 	};
 
-	console.log("User flipped" + " " + cards[cardId].rank);
+	console.log("User flipped" + "" + cards[cardId].rank);
 	cardsInPlay.push(cards[cardId].rank);
-	console.log(cards[cardId].cardImage);
-	console.log(cards[cardId].suit);
-};
+	console.log(cardImage);
+	console.log(suit);
+}
 
-flipCard(0);
-flipCard(2);
+flipcard(0);
+flipcard(2);
+
+
